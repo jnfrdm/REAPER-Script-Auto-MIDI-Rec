@@ -1,4 +1,7 @@
 # REAPER Script Auto MIDI Rec with Disklavier
+# Software Requirements
+REAPER 7.18
+
 # Preliminary MIDI Manipulation
 
 **Attention : the system will not work properly with MIDI songs that have
