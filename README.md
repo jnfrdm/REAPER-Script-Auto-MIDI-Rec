@@ -1,4 +1,16 @@
 # REAPER Script Auto MIDI Rec with Disklavier
+# Preliminary MIDI Manipulation
+
+**Attention : the system will not work properly with MIDI songs that have
+multiple tempo_changes messages!**
+
+If you have MIDI files with multiple tempo_changes, please convert them to a single BPM version. As a reference you can use this python script for understanding which songs has multiple BPM, while this python script for converting them into a single BPM version. Every MIDI file needs to have a consistent name. In addition, for each MIDI file, a
+numbered folder must be created with, inside the MIDI file itself, a tempo.txt containing the BPM of the song and a num.txt and den.txt containing the numerator and denominator of the time signature of the song. You can get this information directly from the MIDI file. You can use this script as a reference. In the case of multiple BPM songs, retrieve those data from the single BPM converted version. In the following fis represented a possible organization of the files considering a number k of songs.
+
+<p align="center">
+  <img width="auto" height="auto" alt="Folders Organization" src="/assets/Folders Organization.png">
+</p>
+
 ## REAPER script installation
 Open REAPER. Go to "Options -> Show REAPER resource path in explorer/finder...". A window should be opened. Go to folder "Scripts", create a new folder "Custom Scripts" and put inside the script.
 Come back to REAPER and go to "Actions -> Show action list...". A window should be opened. Go to "New action... -> Load ReaScript..." and then selects the script inside "Custom Scripts". Now the script is installed.
@@ -8,7 +20,7 @@ Finally, still in "Actions" window, select the script and click on "Edit Action"
 ## Start Script
 Open a new empty project in REAPER, make sure that the play marker (the vertical green line) is exactly at zero (you can press the "Previous Track" button or also use the associated shortcut pressing "w") and press "q" (or the key you chose for the script). The tracks should have been created, the MIDI file should have been played and the recording should have been started.
 
-**Attention : don’t close or hidden the media explorer during the recording
+**Attention : don’t close or hide the media explorer during the recording
 process!**
 
 Since you cannot close the media explorer, if you want more space in the project and you don’t need the mixer, you may close mixer tab.
