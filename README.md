@@ -25,3 +25,8 @@ Only one track, the Back one, has an additional line of code :
 
 In fact, there is an additional *reaper.SetMediaTrackInfo_Value()* with second argument "I_MIDIHWOUT". This function sets the MIDI hardware output to which this track will be connected. This means that only this track will receive MIDI information from the file read in the Media Explorer and will send it to the Disklavier. You can add/remove a track by adding/removing the associated lines but make sure that there is only and only one track with the additional line as in the Back track case.
 
+## Possible Improvements : Alternative Version
+
+A further version of the script has been developed. The key distinction between this version and the previous one is that the MIDI file is imported into the timeline as a new track. This approach avoids the need to obtain the BPM and song length from external files and to convert multiple BPM songs to single BPM ones. However, when a new MIDI file is inserted into the timeline in REAPER, a "MIDI File Import" window is prompted , which restricts the possibility of developing an autonomous system. Despite efforts to identify an optimal solution to this problem, no viable approach was found. Consequently, this version of the script was ultimately abandoned.
+
+
