@@ -7,8 +7,8 @@ REAPER 7.18
 **Attention : the system will not work properly with MIDI songs that have
 multiple tempo_changes messages!**
 
-If you have MIDI files with multiple tempo_changes, please convert them to a single BPM version. As a reference you can use this python script for understanding which songs has multiple BPM, while this python script for converting them into a single BPM version. Every MIDI file needs to have a consistent name. In addition, for each MIDI file, a
-numbered folder must be created with, inside the MIDI file itself, a tempo.txt containing the BPM of the song and a num.txt and den.txt containing the numerator and denominator of the time signature of the song. You can get this information directly from the MIDI file. You can use this script as a reference. In the case of multiple BPM songs, retrieve those data from the single BPM converted version. In the following fis represented a possible organization of the files considering a number k of songs.
+If you have MIDI files with multiple tempo_changes, please convert them to a single BPM version. As a reference you can use *Understand if a MIDI file has multiple BPM.py* python script for understanding which songs has multiple BPM, while *Convert multiple BPM songs to single BPM songs.py* python script for converting them into a single BPM version. Every MIDI file needs to have a consistent name. In addition, for each MIDI file, a
+numbered folder must be created with, inside the MIDI file itself, a tempo.txt containing the BPM of the song and a num.txt and den.txt containing the numerator and denominator of the time signature of the song. You can get this information directly from the MIDI file. You can use *Retrieve BPM, Length and Time Signature of constant tempo MIDI songs.py* script as a reference. In the case of multiple BPM songs, retrieve those data from the single BPM converted version. In the following fis represented a possible organization of the files considering a number k of songs.
 
 <p align="center">
   <img width="auto" height="auto" alt="Folders Organization" src="/assets/Folders Organization.png">
