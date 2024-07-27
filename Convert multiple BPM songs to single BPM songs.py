@@ -3,6 +3,7 @@
     You can run it by :
     1) Typing "python Understand if a MIDI file has multiple BPM.py" on the terminal. Be sure that the script is present in the currect directory!
     2) Using and IDE like Visual Studio code or PyCharm
+
 '''
 
 '''
@@ -10,6 +11,7 @@
     Create a folder and put inside the .mid files you want to convert into single BPM version.
     Fill "midi_folder_path" with the path of that folder.
     Fill instead "output_path" with the path of the desired output folder.
+
 '''
 
 import mido
@@ -21,7 +23,7 @@ import numpy as np
 # Output path
 output_folder_path = "" 
 
-# MIDI path
+# MIDI folder path
 midi_folder_path = ""
 
 for filename in os.listdir(midi_folder_path):
