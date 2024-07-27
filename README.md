@@ -48,11 +48,3 @@ In fact, there is an additional *reaper.SetMediaTrackInfo_Value()* with second a
   <img width="auto" height="auto" alt="REAPER last track code" src="/assets/REAPER last track code.png">
 </p>
 
-## Possible Improvements : Alternative Version
-
-A further version of the script has been developed. The key distinction between this version and the previous one is that the MIDI file is imported into the timeline as a new track. This approach avoids the need to obtain the BPM and song length from external files and to convert multiple BPM songs to single BPM ones. However, when a new MIDI file is inserted into the timeline in REAPER, a "MIDI File Import" window is prompted , which restricts the possibility of developing an autonomous system. Despite efforts to identify an optimal solution to this problem, no viable approach was found. Consequently, this version of the script was ultimately abandoned.
-
-<p align="center">
-  <img width="auto" height="auto" alt="MIDI File Import REAPER Window" src="/assets/MIDI File Import REAPER Window.png">
-</p>
-
