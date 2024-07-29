@@ -1,6 +1,10 @@
 # REAPER Script Auto MIDI Rec
 # Software Requirements
 REAPER 7.18
+Python 3.12.4
+
+# Reference  
+You may need to modify the Lua script. You can use as reference the documentation of ReaScript API: https://www.reaper.fm/sdk/reascript/reascripthelp.html
 
 # Preliminary MIDI Manipulation
 
@@ -33,6 +37,8 @@ Change the following variables :
 - "n_MIDI_device_index" with the output MIDI index of the MIDI hardware (Disklavier in the case of Audio909)
 - "song_name" with the name that have MIDI files (In the Audio909 case, fill "song_name" with one of the track among ["MBA","M","B","A"]. Then open the editor of the Lua script, comment lines 127,168 and 183 by writing "--" at the beginning and un-comment line 128,169 and 184 by deleting "--" at the beginning.)
 
+Then close and save the script.
+
 ## Start Script
 Open a new empty project in REAPER, make sure that the play marker (the vertical green line) is exactly at zero (you can press the "Previous Track" button or also use the associated shortcut pressing "w") and press "q" (or the key you chose for the script). The tracks should have been created, the MIDI file should have been played and the recording should have been started.
 
@@ -43,7 +49,7 @@ Since you cannot close the media explorer, if you want more space in the project
 If you need to start the script in an already existing project, also make sure that you are not selecting any track before running the script.
 
 ## Stop Script 
-You can stop the system simply pressing again "q" (or the key you chose for the script). REAPER will ask you if you prefer to open a new instance or exit, just exit. Then stop the recording by the red recording button (alternatively you can use "cmnd+R" shortcut) and stop the playback (alternatively you can press the space).
+You can stop the system simply pressing again "q" (or the key you chose for the script). REAPER will ask you if you prefer to open a new instance or exit, just exit. Then stop the recording by the red recording button (alternatively you can use "cmnd+R" shortcut) and stop the playback (alternatively you can press the space) and click on "save all" in order to save all the recordings.
 
 ## Adding/removing tracks on REAPER script
 Taking as example the Far microphone, each track in the REAPER script is created with these lines of code :
