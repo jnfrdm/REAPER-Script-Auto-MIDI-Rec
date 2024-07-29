@@ -7,6 +7,9 @@
 '''
 
 '''
+    !!! REQUIREMENTS !!!
+    You need to install mido library!
+    
     !!! INSTRUCTIONS !!!
     Create a folder and put inside the .mid files you want to know if they have multiple BPM.
     Fill "midi_folder_path" with the path of that folder.
